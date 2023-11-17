@@ -53,7 +53,7 @@ const Table = ({
   };
 
   return (
-    <div>
+    <div className="container">
       {showTable && (
         <table>
           <thead>
