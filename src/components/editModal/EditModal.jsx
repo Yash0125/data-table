@@ -5,13 +5,17 @@ import "./editModal.css";
 const EditModal = ({ value, onChange, onSave, onCancel }) => {
   return (
     <div className="modal">
-      <div className="modal-content">
-        <h2>Edit Name</h2>
-        <input type="text" value={value} onChange={onChange} />
-        <button className="delete-btn" onClick={onSave}>
+      <div className="edit-container">
+        <h3 className="edit-title">Edit Name</h3>
+        <input className="edit-input" type="text" value={value} onChange={onChange} />
+        <div className="edit-btn-container"> 
+        <button className="save-btn" onClick={onSave}>
           Save
         </button>
-        <button onClick={onCancel}>Cancel</button>
+        <button className="cancel-btn" onClick={onCancel}>Cancel</button>
+
+        </div>
+        
       </div>
     </div>
   );

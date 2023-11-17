@@ -1,0 +1,48 @@
+.modal{
+    height: 200px;
+    width: 200px;
+    padding: 60px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(51, 42, 42, 0.8);
+}
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-title {
+  align-self: flex-start;
+}
+
+.edit-input {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 30px;
+}
+
+.edit-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.save-btn {
+  background-color: rgb(112, 221, 112);
+  border: none;
+  width: 50px;
+  height: 35px;
+  margin: 4px 6px;
+  border-radius: 5px;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: rgb(221, 161, 112);
+  border: none;
+  width: 70px;
+  height: 35px;
+  margin: 4px 6px;
+  border-radius: 5px;
+  color: white;
+}
