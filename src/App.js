@@ -71,6 +71,7 @@ function App() {
         onCancel={handleCancel}
         selectedRow={selectedRow}
         onDeleteConfirm={handleDeleteConfirm}
+        setSelectedRow={setSelectedRow}
       />
     </div>
   );

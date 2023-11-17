@@ -12,6 +12,7 @@ const Table = ({
   onCancel,
   selectedRow,
   onDeleteConfirm,
+  setSelectedRow
 }) => {
   const [editedName, setEditedName] = useState("");
   const [showDeleteModal, setShowDeleteModal] = useState(false);
@@ -50,6 +51,7 @@ const Table = ({
   const handleDeleteCancel = () => {
     setShowDeleteModal(false);
     setShowTable(true); // Set showTable to true after canceling delete
+    setSelectedRow(null)
   };
 
   return (
@@ -96,7 +98,7 @@ const Table = ({
         </table>
       )}
 
-      {selectedRow !== null && !showDeleteModal && (
+      {(selectedRow !== null && !showDeleteModal) && (
         <EditModal
           value={editedName}
           onChange={(e) => setEditedName(e.target.value)}

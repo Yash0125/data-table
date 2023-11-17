@@ -1,0 +1,28 @@
+.modal {
+  height: 200px;
+  width: 200px;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(51, 42, 42, 0.8);
+}
+
+.delete-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.delete-btn-container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.delete-button {
+  background-color: red;
+  border: none;
+  width: 70px;
+  height: 35px;
+  margin: 4px 6px;
+  border-radius: 5px;
+  color: white;
+}
